@@ -8,7 +8,7 @@ const ProductDetail = () => {
     const [loading, setLoading] = useState(false);
     
     const getProductDetail= async ()=>{
-        let url = `http://localhost:5000/products/${id}`; //https://my-json-server.typicode.com/AhnBy/coding.stg
+        let url = `https://my-json-server.typicode.com/AhnBy/coding.stg/reactProject/hnm-react-router-practice/products/${id}`; //https://my-json-server.typicode.com/AhnBy/coding.stg
         let response = await fetch(url)
         let data = await response.json();
         console.log(data);
