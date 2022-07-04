@@ -10,7 +10,7 @@ const ProductAll = () => {
     const getProducts = async () => {
         try {
         let searchQuery = query.get('q') || "";
-            let url = `https://my-json-server.typicode.com/AhnBy/coding.stg/reactProject/hnm-react-router-practice/products?q=${searchQuery}`  //https://my-json-server.typicode.com/AhnBy/coding.stg
+            let url = `https://my-json-server.typicode.com/AhnBy/coding.stg/products?q=${searchQuery}`  //https://my-json-server.typicode.com/AhnBy/coding.stg
             let response = await fetch(url);
             let data = await response.json();
             if (data.length < 1) {
